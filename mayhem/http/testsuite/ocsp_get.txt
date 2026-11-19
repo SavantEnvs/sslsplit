@@ -1,0 +1,8 @@
+GET /MEMwQTA/MD0wOzAJBgUrDgMCGgUABBSW/U9BdzQtCd4M33tFMlCKKp1jogQUqw3u+/KykfReiTSDXxS3WUZp44QCAhI0 HTTP/1.1
+Host: ocsp.example.com
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Content-Type: application/ocsp-response
+Content-Length: 5
+

@@ -1,0 +1,7 @@
+POST /ocsp HTTP/1.0
+Host: ocsp.example.com
+Content-Type: application/ocsp-request
+Content-Length: 3
+
+HTTP/1.0 404
+

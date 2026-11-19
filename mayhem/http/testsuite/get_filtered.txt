@@ -1,0 +1,17 @@
+GET /index.html HTTP/1.1
+Host: www.example.com
+User-Agent: test
+Accept-Encoding: gzip
+Upgrade: h2c
+Keep-Alive: 300
+Connection: Upgrade
+
+HTTP/1.1 301 Moved Permanently
+Strict-Transport-Security: max-age=31536000
+Public-Key-Pins: pin-sha256="x"
+Expect-CT: max-age=0
+Alternate-Protocol: 443:quic
+Upgrade: h2
+Content-Length: 0
+Location: https://www.example.com/
+

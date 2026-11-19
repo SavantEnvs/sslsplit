@@ -1,0 +1,11 @@
+project: savantenvs/sslsplit
+target: x509cert
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_x509cert
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/x509cert/testsuite

@@ -1,0 +1,11 @@
+project: savantenvs/sslsplit
+target: ocspuri
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_ocspuri
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ocspuri/testsuite

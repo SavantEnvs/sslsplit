@@ -1,0 +1,11 @@
+project: savantenvs/sslsplit
+target: conffile
+
+cmds:
+  - cmd: /mayhem/mayhem/out/sslsplit-afl -f @@ -V
+    afl: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/conffile/testsuite
